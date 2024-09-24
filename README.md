@@ -5,24 +5,26 @@
 # 🔥🔥 Use PYTHON 3.10 🔥🔥
 
 ## Features  
-| Functional                                               | Supported |
-|:--------------------------------------------------------:|:---------:|
-| Multithreading                                           |     ✅     |
-| Proxy binding to session                                 |     ✅     |
-| Auto Referral                                            |     ✅     |
-| Auto Claim Task                                          |     ✅     |
-| Support for pyrogram .session                            |     ✅     |
+| Feature                                                   | Supported |
+|-----------------------------------------------------------|:---------:|
+| Multithreading                                            |     ✅     |
+| Proxy binding to session                                  |     ✅     |
+| User-Agent binding to session                             |     ✅     |
+| Support for tdata / pyrogram .session / telethon .session |     ✅     |
+| Registration in bot                                       |     ✅     |
+| Auto-tasks                                                |     ✅     |
+| Daily rewards                                             |     ✅     |
 
-## [Settings](https://github.com/sizifart/CatsGangBot/blob/main/.env-example/)
-|        Settings         |                                      Description                                       |
-|:-----------------------:|:--------------------------------------------------------------------------------------:|
-|  **API_ID / API_HASH**  |        Platform data from which to run the Telegram session (default - android)        |
-| **REF_ID**           |                   Your referral id after startapp= (Your telegram ID)                  |
-| **USE_RANDOM_DELAY_IN_RUN**  | Whether to use random delay at startup (True / False)                                               |
-| **RANDOM_DELAY_IN_RUN**      | Random delay at startup (e.g. [0, 15])                                                              |
-| **FAKE_USER AGENT** |                   Use a fake user agent for sessions (True / False)                    |
-| **SLEEP_TIME**          |                   Delay before the next lap (e.g. [1800, 3600])                         |
-| **USE_PROXY_FROM_FILE** |      Whether to use a proxy from the `bot/config/proxies.txt` file (True / False)      |
+
+## [Settings](https://github.com/sizifart/CatsGangBot/blob/master/.env-example/)
+| Settings                |                                 Description                                 |
+|-------------------------|:---------------------------------------------------------------------------:|
+| **API_ID / API_HASH**   | Platform data from which to run the Telegram session (by default - android) |
+| **SLEEP_TIME**          |           Sleep time between cycles (by default - [7200, 10800])            |
+| **START_DELAY**         |            Delay between sessions at start (by default - [5, 25])           |
+| **AUTO_TASK**           |                         Auto tasks (default - True)                         |
+| **JOIN_CHANNELS**       |              Auto-join for tg channels tasks (default - True)               |
+| **REF_ID**              |                          Ref link for registration                          |
 
 ## Prerequisites
 Before you begin, make sure you have the following installed:
